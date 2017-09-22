@@ -1,6 +1,6 @@
 package calculator;
 
-public class CalculatorIFImpl implements CalculatorIF {
+public class CalculatorPrototype implements CalculatorIF {
 
     @Override
     public int sum(int m, int n) {
@@ -12,7 +12,7 @@ public class CalculatorIFImpl implements CalculatorIF {
     @Override
     public int divide(int m, int n) {
         if (n == 0)
-            throw new IllegalArgumentException("Division by zero");
+            throw new ArithmeticException("Division by zero");
         int d = 0;
         while (m > 0) {
             m -= n;

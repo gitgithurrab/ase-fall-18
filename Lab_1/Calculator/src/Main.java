@@ -1,10 +1,10 @@
 import calculator.CalculatorIF;
-import calculator.CalculatorIFImpl;
+import calculator.CalculatorPrototype;
 
 public class Main {
 
     public static void main(String[] args) {
-        CalculatorIF c = new CalculatorIFImpl();
+        CalculatorIF c = new CalculatorPrototype();
         assert c.sum(-1, -3) == -4;
         assert c.sum(5, 8) == 13;
         assert c.sum(5, -2) == 3;
